@@ -19,7 +19,7 @@ while not done:
 	obs, reward, done, _ = env.step(action)
 	timeList.append(timesteps)
 	rewardList.append(reward)
-	compassAngleList.append(obs.["compassAngle"])
+	compassAngleList.append(obs["compassAngle"])
 	timesteps += 1
 
 plt.subplot(1, 2, 1)
